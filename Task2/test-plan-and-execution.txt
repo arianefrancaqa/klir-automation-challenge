@@ -1,0 +1,214 @@
+   ## UI Test Plan ##
+
+### Welcome Screen ###
+    Before Test:
+    - Access the WATER CUSTOMERS APP
+
+|        Test Case Title        |
+    1. User fills the name field:
+        1.1) Given User is on the 'Welcome Screen' 
+            Result:
+                - OK
+
+        1.2) When fill the field with **name**;
+            Result:
+                - OK
+
+        1.3) And click 'Submit' button;
+            Result:
+                - OK
+
+        1.4) Then the following message "Hi **name**. 
+        It is now **current_date** and here is 
+        our customer list. Click on each of them 
+        to view their contact details." is shown;
+            Result:
+                - NOK
+            Note: The displayed **current_date** is wrong, 
+            it is showing one day ahead. Today is "Sun Sep 24 2023"
+            and the displayed date is "Mon Sep 25 2023"
+        
+        1.5) And the Customer List is displayed;
+            Result:
+                - OK
+
+    2. User hit 'Submit' without filling the name:
+        2.1) Given User is on the 'Welcome Screen' 
+            Result:
+                - OK
+
+        2.2) When User leaves the name field blank;
+            Result:
+                - OK
+
+        2.3) And hit 'Submit' button;
+            Result:
+                - OK
+
+        2.4) Then an Alert is displayed saying
+        "Please provide your name";
+            Result:
+                - OK        
+    
+    3. Validate instructions:
+        3.1) Given User is on the 'Welcome Screen';
+            Result:
+                - OK
+
+        3.2) Then User read the instructions 
+        "Please provide your name:";
+            Result:
+                - OK
+
+
+### Customer List Screen ###
+    Before Test:
+    - Run "Welcome Screen - Test 1"
+    - Make sure to start the test after being on Customer 
+    List Screen"
+
+|        Test Case Title        |
+    1. Check list information displayed is correct:
+        1.1) Given User is on the 
+        'Customer List Screen' 
+            Result:
+                - OK
+
+        1.2) Then the following info is shown:
+        "Name", "# of Employees", "Size
+            Result:
+                - OK
+
+    2. '# of Employees' <= 2500:
+        2.1) Given User is on the 'Customer List Screen' 
+            Result:
+                - OK
+
+        2.2) When a customer has "# of employees" less 
+        than or equal to 2500
+            Result:
+                - OK
+
+        2.3) Then Customer "Size" is **Small**;
+            Result:
+                - OK
+    
+    3. '# of Employees' > 2500 and <= 5000:
+        3.1) Given User is on the 'Customer List Screen' 
+            Result:
+                - OK
+
+        3.2) When a customer has "# of employees" is
+        > 2500 and <= 5000
+            Result:
+                - NOK
+
+
+        3.3) Then Customer "Size" is **Medium**;
+            Result:
+                - NOK
+
+            Note: Customer "Las Vegas Water, 
+            has 3200 Employess, and the App is showing 
+            it's size as "Big", while the Expect Result 
+            for Size is "Medium"
+
+    4. '# of Employees' > 5000:
+        4.1) Given User is on the 'Customer List Screen'
+            Result:
+                - OK 
+
+        4.2) When a customer has "# of employees" bigger 
+        than 5000
+            Result:
+                - OK 
+
+        4.3) Then Customer "Size" is **Big**;
+            Result:
+                - NOK 
+
+            Note: Customer "Las Vegas Water, 
+            has 3200 Employess, and the App is showing 
+            it's size as "Big", while the Expect Result 
+            for Size is "Medium"
+
+    5. User clicks on customer name:
+        5.1) Given User is on the 'Customer List Screen' 
+            Result:
+                - OK 
+        5.2) When User clicks on customer name
+            Result:
+                - OK 
+
+        5.3) Then **Contacts Detail Screen** is shown
+            Result:
+                - OK 
+
+### Contacts Detail Screen ###
+    Before Test:
+    - Run "Welcome Screen - Test 1"
+    - Make sure to start the test after being on Customer 
+    List Screen"
+
+|        Test Case Title        |
+    1. Check customer detailed info displayed is correct:
+        1.1) Given User is on the 
+        'Customer List Screen';
+            Result:
+                - OK 
+
+        1.2) When User clicks on 'customers name' of a 
+        customer with contact info data
+            Result:
+                - OK 
+
+        1.3) Then screen shows the customers detailed 
+        info (Name, # of Employees, and Size);
+            Result:
+                - OK 
+        
+        1.4) And the "name" and "e-mail" of the person in 
+        the company to be contacted.
+            Result:
+                - OK 
+
+
+    2. Check customer doesn't have contact info message 
+    is presented:
+        2.1) Given User is on the 
+        'Customer List Screen';
+            Result:
+                - OK 
+
+        2.2) When User clicks on 'customers name' of a 
+        customer doesn't have contact info;
+            Result:
+                - OK 
+
+        2.3) Then the message **No contact info available**
+        is presented.
+            Result:
+                - NOK
+            Note: The customer "Denver's Water" when clicking
+            to check contact info is showing an empty page, 
+            the expected result was to show the message 
+            **No contact info available**
+
+    3. Check 'Back to the list' button works:
+        1.1) Given User is on the 
+        'Customer List Screen';
+            Result:
+                - OK 
+
+        1.2) When User clicks on 'customers name' of a 
+        customer with contact info data
+            Result:
+                - OK 
+
+        1.3) And User clicks on 'Back to the list name' button
+            Result:
+                - OK 
+
+        1.4) Then Customer's list page is shown
+            Result:
+                - OK 
