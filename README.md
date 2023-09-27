@@ -3,8 +3,9 @@ Klir's Automation Challenge
 
 ## Welcome to my Klir's Automation Challenge! :raising_hand_woman: 
 ### This project includes:
-- API Testing
-- WEB testing
+- Test Plan and Manual Execution
+- Automated API Testing
+- Automated WEB testing
 
 ### 1. Download/Install NodeJS/NPM:
 
