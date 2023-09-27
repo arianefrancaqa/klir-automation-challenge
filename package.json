@@ -1,0 +1,23 @@
+{
+  "name": "klir-automation-challenge",
+  "version": "1.0.0",
+  "description": "Klir's Automation Challenge",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arianefrancaqa/klir-automation-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arianefrancaqa/klir-automation-challenge/issues"
+  },
+  "homepage": "https://github.com/arianefrancaqa/klir-automation-challenge#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.1.0",
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.7.0"
+  }
+}
