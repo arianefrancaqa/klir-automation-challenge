@@ -1,7 +1,7 @@
 # klir-automation-challenge
 Klir's Automation Challenge
 
-## Welcome Klir's Automation Challenge! :raising_hand_woman: 
+## Welcome to my Klir's Automation Challenge! :raising_hand_woman: 
 ### This project includes:
 - API Testing
 - WEB testing
