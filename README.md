@@ -39,7 +39,7 @@ Klir's Automation Challenge
     npm i
 ```
 
-### 4. Build and start the Customer App
+### 5. Build and start the Customer App
 
  - Build and Start Klir's Customer App:
    https://github.com/tsklir/klir_interview#task-1-test-environment-setup
@@ -61,7 +61,7 @@ Run a single test:
 ```
 
 ### 7. Author
-#### Ariane França
+    Ariane França
 
 ### 8. Check Playwright documentation that this project is based:
 - https://playwright.dev/docs/intro
