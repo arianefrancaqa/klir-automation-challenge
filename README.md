@@ -61,7 +61,7 @@ Run a single test:
 ```
 
 ### 7. Author
-    Ariane França
+Ariane França
 
 ### 8. Check Playwright documentation that this project is based:
 - https://playwright.dev/docs/intro
