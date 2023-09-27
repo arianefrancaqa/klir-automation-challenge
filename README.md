@@ -61,6 +61,11 @@ Run a single test:
   npx playwright test ${specName}.spec.js -g "${testTitle}"
 ```
 
+Reporting:
+```javascript
+  npx playwright show-report
+```
+
 ### 7. Author
 Ariane França
 
