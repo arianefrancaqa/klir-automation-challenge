@@ -19,5 +19,8 @@
     "@faker-js/faker": "^8.1.0",
     "@playwright/test": "^1.38.1",
     "@types/node": "^20.7.0"
+  },
+  "dependencies": {
+    "joi": "^17.10.2"
   }
 }

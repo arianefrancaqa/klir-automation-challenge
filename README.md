@@ -3,6 +3,7 @@ Klir's Automation Challenge
 
 ## Welcome Klir's Automation Challenge! :raising_hand_woman: 
 ### This project includes:
+- Contract Testing
 - API Testing
 - WEB testing
 
